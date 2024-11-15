@@ -37,3 +37,9 @@ keymap.set("n", "<leader>fb", "<cmd>Telescope buffers<CR>", { desc = "Find strin
 
 -- Vim Maximizer
 keymap.set("n", "<leader>sm", "<cmd>MaximizerToggle<CR>", { desc = "Maximize/minimize a split" })
+
+-- LazyGit
+keymap.set("n", "<leader>lg", "<cmd>LazyGit<CR>", { desc = "LazyGit" })
+
+-- GitBlame
+keymap.set("n", "<leader>gO", "<cmd>GitBlameOpenCommitURL<CR>", { desc = "Open commit url on Github" })

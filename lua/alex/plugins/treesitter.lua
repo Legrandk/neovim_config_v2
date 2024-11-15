@@ -39,6 +39,7 @@ return {
         "lua",
         "markdown",
         "markdown_inline",
+        "python",
         "ruby",
         "sql",
         "typescript",
