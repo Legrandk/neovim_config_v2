@@ -9,6 +9,12 @@ return {
     -- import nvim-treesitter plugin
     local treesitter = require("nvim-treesitter.configs")
 
+    -- Folding
+    vim.opt.foldmethod = "expr"
+    vim.opt.foldexpr = "nvim_treesitter#foldexpr()"
+    vim.opt.foldlevel = 20
+    vim.cmd([[ set nofoldenable]])
+
     -- configure treesitter
     treesitter.setup({
       highlight = {

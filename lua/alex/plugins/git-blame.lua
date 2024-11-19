@@ -10,6 +10,6 @@ return {
     enabled = true,
     message_template = " <author> • <date> • <<sha>>",
     date_format = "%m-%d-%Y %H:%M",
-    virtual_text_column = 80,
+    virtual_text_column = 30,
   },
 }
