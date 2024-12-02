@@ -10,6 +10,11 @@ opt.tabstop = 2
 opt.shiftwidth = 2
 opt.expandtab = true
 opt.autoindent = true
+opt.shiftround = true -- use spaces for tabs and whatnot
+
+opt.showcmd = true
+opt.laststatus = 2
+opt.autoread = true
 
 opt.wrap = false
 

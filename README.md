@@ -21,10 +21,12 @@ $ ln -s neovim_config_v2 nvim
 - Indent-Blankline
 - LazyGit
 - Lualine
+- Marks
 - Nvim-Cmp
 - Nvim-Tree
 - Treesitter
 - Vim-Maximizer
+- Vim-Flog
 - Which-key
 
 ## Main Treesitter Language Parsers
