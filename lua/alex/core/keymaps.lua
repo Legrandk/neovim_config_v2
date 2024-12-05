@@ -46,4 +46,4 @@ keymap.set("n", "<leader>gO", "<cmd>GitBlameOpenCommitURL<CR>", { desc = "Open c
 
 -- Marks (aka Bookmarks)
 keymap.set("n", "<leader>ml", "<cmd>marks<CR>", { desc = "Show list of bookmarks" })
-keymap.set("n", "<leader>mD", "<cmd>delmarks A-Z0-9<CR>", { desc = "Show list of bookmarks" })
+keymap.set("n", "<leader>mD", "<cmd>delmarks a-zA-Z0-9<CR>", { desc = "Show list of bookmarks" })
