@@ -16,7 +16,7 @@ return {
         use_system_clipboard = false,
         open_file = {
           window_picker = {
-            enable = false,
+            enable = true,
           },
         },
       },
