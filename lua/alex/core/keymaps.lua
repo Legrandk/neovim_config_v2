@@ -29,9 +29,11 @@ keymap.set("n", "<leader>ef", "<cmd>NvimTreeFindFileToggle<CR>", { desc = "Toggl
 keymap.set("n", "<leader>er", "<cmd>NvimTreeRefresh<CR>", { desc = "Refresh file explorer" })
 
 -- Telescope
+keymap.set("n", "<leader>fh", "<cmd>Telescope help_tags<CR>", { desc = "Telescope help tags" })
 keymap.set("n", "<leader>ff", "<cmd>Telescope find_files<CR>", { desc = "Fuzzy find files in cwd" })
 keymap.set("n", "<leader>fr", "<cmd>Telescope oldfiles<CR>", { desc = "Fuzzy find recent files" })
-keymap.set("n", "<leader>fg", "<cmd>Telescope live_grep<CR>", { desc = "Find string in cwd" })
+-- NOTE: Configured in telescope/multigrep.lua
+-- keymap.set("n", "<leader>fg", "<cmd>Telescope live_grep<CR>", { desc = "Find string in cwd" })
 keymap.set("n", "<leader>fc", "<cmd>Telescope grep_string<CR>", { desc = "Find string under cursor in cwd" })
 keymap.set("n", "<leader>fb", "<cmd>Telescope buffers<CR>", { desc = "Find string in buffers" })
 
@@ -47,3 +49,11 @@ keymap.set("n", "<leader>gO", "<cmd>GitBlameOpenCommitURL<CR>", { desc = "Open c
 -- Marks (aka Bookmarks)
 keymap.set("n", "<leader>ml", "<cmd>marks<CR>", { desc = "Show list of bookmarks" })
 keymap.set("n", "<leader>mD", "<cmd>delmarks a-zA-Z0-9<CR>", { desc = "Show list of bookmarks" })
+
+-- Oil (File explorer within buffers)
+keymap.set("n", "<leader>eo", "<cmd>Oil<CR>", { desc = "Open parent directory (Oil)" })
+
+-- Lua Development
+keymap.set("n", "<leader><space>x", "<cmd>source %<CR>", { desc = "Source current file" })
+keymap.set("n", "<leader>x", "<cmd>:.lua<CR>", { desc = "Execute current lua line code" })
+keymap.set("v", "<leader>x", "<cmd>:lua<CR>", { desc = "Execute current lua block code" })
