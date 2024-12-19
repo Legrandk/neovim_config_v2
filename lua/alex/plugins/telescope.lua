@@ -21,9 +21,14 @@ return {
             ["<C-q>"] = actions.send_selected_to_qflist + actions.open_qflist, -- move to prev result
           },
         },
+        extensions = {
+          fzf = {},
+        }
       },
     })
 
     telescope.load_extension("fzf")
+
+    require("alex.plugins.telescope.multigrep").setup()
   end,
 }
