@@ -24,9 +24,10 @@ $ ln -s neovim_config_v2 nvim
 - Marks
 - Nvim-Cmp
 - Nvim-Tree
+- Oil
 - Treesitter
-- Vim-Maximizer
 - Vim-Flog
+- Vim-Maximizer
 - Which-key
 
 ## Main Treesitter Language Parsers
