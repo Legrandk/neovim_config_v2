@@ -16,6 +16,7 @@ $ ln -s neovim_config_v2 nvim
 
 - Autopairs
 - Colorscheme
+- Copilot
 - Dressing
 - GitBlame
 - Indent-Blankline

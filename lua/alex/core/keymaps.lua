@@ -53,6 +53,14 @@ keymap.set("n", "<leader>mD", "<cmd>delmarks a-zA-Z0-9<CR>", { desc = "Show list
 -- Oil (File explorer within buffers)
 keymap.set("n", "<leader>eo", "<cmd>Oil<CR>", { desc = "Open parent directory (Oil)" })
 
+-- Copilot
+keymap.set("i", "<C-Enter>", "copilot#Accept('\\<CR>')", {
+  expr =true,
+  replace_keycodes = false,
+  desc = "Copilot accept suggestion"
+})
+vim.g.copilot_no_tab_map = true
+
 -- Lua Development
 keymap.set("n", "<leader><space>x", "<cmd>source %<CR>", { desc = "Source current file" })
 keymap.set("n", "<leader>x", "<cmd>:.lua<CR>", { desc = "Execute current lua line code" })
