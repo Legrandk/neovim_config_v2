@@ -30,5 +30,6 @@ return {
     telescope.load_extension("fzf")
 
     require("alex.plugins.telescope.multigrep").setup()
+    require("alex.plugins.telescope.where_is_my_test").setup()
   end,
 }
