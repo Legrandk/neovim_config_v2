@@ -48,3 +48,6 @@ $ ln -s neovim_config_v2 nvim
 - LuaLs
 - Solargraph
 
+## Telescope Extensions
+
+- Where-Is-My-Test (Ruby only)
