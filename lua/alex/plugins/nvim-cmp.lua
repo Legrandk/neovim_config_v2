@@ -78,8 +78,8 @@ return {
       -- source for autocompetion
       sources = cmp.config.sources({
         { name = "nvim_lsp" },
-        { name = "luasnip" },
         { name = "buffer" },
+        { name = "luasnip" },
         { name = "path" },
       }),
       -- configure lspkind for vs-code like pictograms in completion menu
