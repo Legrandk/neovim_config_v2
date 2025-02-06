@@ -76,5 +76,22 @@ return {
         })
       end
     })
+
+    -- Kotlin LSP
+    lspconfig.kotlin_language_server.setup({
+      capabilities = capabilities,
+      settings = {
+        kotlin = {
+          codeActions = {
+            organizeImports = true,
+          },
+          compiler = {
+            jvm = {
+              target = "21",
+            },
+          },
+        },
+      },
+    })
   end,
 }
