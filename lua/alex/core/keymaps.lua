@@ -43,6 +43,7 @@ keymap.set("n", "<leader>sm", "<cmd>MaximizerToggle<CR>", { desc = "Maximize/min
 
 -- LazyGit
 keymap.set("n", "<leader>lg", "<cmd>LazyGit<CR>", { desc = "LazyGit" })
+keymap.set("n", "<leader>ll", "<cmd>LazyGitFilterCurrentFile<CR>", { desc = "LazyGit Current File Log" })
 
 -- GitBlame
 keymap.set("n", "<leader>gO", "<cmd>GitBlameOpenCommitURL<CR>", { desc = "Open commit url on Github" })
@@ -55,12 +56,12 @@ keymap.set("n", "<leader>mD", "<cmd>delmarks a-zA-Z0-9<CR>", { desc = "Show list
 keymap.set("n", "<leader>eo", "<cmd>Oil<CR>", { desc = "Open parent directory (Oil)" })
 
 -- Copilot
-keymap.set("i", "<C-Enter>", "copilot#Accept('\\<CR>')", {
-  expr =true,
-  replace_keycodes = false,
-  desc = "Copilot accept suggestion"
-})
-vim.g.copilot_no_tab_map = true
+-- keymap.set("i", "<C-Enter>", "copilot#Accept('\\<CR>')", {
+--   expr =true,
+--   replace_keycodes = false,
+--   desc = "Copilot accept suggestion"
+-- })
+-- vim.g.copilot_no_tab_map = true
 
 -- Lua Development
 keymap.set("n", "<leader><space>x", "<cmd>source %<CR>", { desc = "Source current file" })

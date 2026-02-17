@@ -18,7 +18,12 @@ return {
           i = {
             ["<C-k>"] = actions.move_selection_previous, -- move to prev result
             ["<C-j>"] = actions.move_selection_next, -- move to next result
-            ["<C-q>"] = actions.send_selected_to_qflist + actions.open_qflist, -- move to prev result
+            ["<C-q>"] = actions.send_selected_to_qflist + actions.open_qflist, -- send selected to qflist
+            ["<C-a>"] = actions.add_selected_to_qflist + actions.open_qflist, -- append selected to qflist
+          },
+          n = {
+            ["<C-q>"] = actions.send_selected_to_qflist + actions.open_qflist, -- send selected to qflist
+            ["<C-a>"] = actions.add_selected_to_qflist + actions.open_qflist, -- append selected to qflist
           },
         },
         extensions = {
